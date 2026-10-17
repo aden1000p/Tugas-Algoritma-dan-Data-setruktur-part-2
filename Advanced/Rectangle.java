@@ -1,21 +1,16 @@
 import java.util.Scanner;
 
 public class Rectangle{
-    // membuat persegi tiga siku-siku
     public static void main(String[] args){
-        // kita buat lebar dan panjangnya 
         Scanner input = new Scanner(System.in);
-
-        System.out.print("Masukan lebar: ");
+        System.out.print("masukan lebar: ");
         int lebar = input.nextInt();
 
-        System.out.print("Masukan Panjang: ");
+        System.out.print("masukan panjang: ");
         int panjang = input.nextInt();
 
-        // kita bisa menentukan suatu panjang dan lebarnya dengan loop 
-        for (int i = 0; i < lebar; i++){
-            for (int j = 0; j < panjang; j++){
-                // ini untuk bintanya ke baris; 
+        for (int i = 0; i < panjang; i++){
+            for (int j = 0; j < lebar; j++){
                 System.out.print("*");
             }
             System.out.println();
